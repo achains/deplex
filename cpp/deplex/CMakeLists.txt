@@ -72,6 +72,8 @@ target_include_directories(
 target_link_libraries(${TARGET_NAME} PUBLIC Eigen3::Eigen)
 target_link_libraries(${TARGET_NAME} PRIVATE dsyev)
 target_link_libraries(${TARGET_NAME} PRIVATE rtl)
+target_link_libraries(${TARGET_NAME} PUBLIC mimalloc)
+
 if (OpenMP_CXX_FOUND)
     target_link_libraries(${TARGET_NAME} PRIVATE OpenMP::OpenMP_CXX)
 endif ()

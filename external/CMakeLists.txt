@@ -1,4 +1,5 @@
 add_subdirectory(eigen3)
+add_subdirectory(mimalloc)
 
 if (${BUILD_TESTS})
     add_subdirectory(googletest)
